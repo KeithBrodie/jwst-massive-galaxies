@@ -34,9 +34,9 @@ In the standard hierarchical picture, the additional bottleneck is the rarity of
 
 Several mechanisms have been proposed to alleviate the tension within or near the standard framework:
 
-- **Enhanced star formation efficiency** at high $z$, including "feedback-free starbursts" (FFB) in which gas converts to stars before feedback can regulate the process [18]. Dekel et al. have since extended the FFB framework to explain Little Red Dots via compaction. Kar et al. [37] propose an evolving star formation efficiency as the key mechanism, while Mu\~noz et al. [38] find empirical evidence for increased burstiness in smaller halos at cosmic dawn. These proposals address the mass budget and luminosity function but not the fundamental timescale problem at $z > 12$.
+- **Enhanced star formation efficiency** at high $z$, including "feedback-free starbursts" (FFB) in which gas converts to stars before feedback can regulate the process [18]. Dekel et al. have since extended the FFB framework to explain Little Red Dots via compaction. Kar et al. [37] propose an evolving star formation efficiency as the key mechanism, while Munoz et al. [38] find empirical evidence for increased burstiness in smaller halos at cosmic dawn. These proposals address the mass budget and luminosity function but not the fundamental timescale problem at $z > 12$.
 
-- **Revised mass estimates.** Ziegler et al. [39] argue that three effects --- outshining by young stars, assumed star formation histories, and dust attenuation --- can each reduce inferred stellar masses by factors of a few, potentially reducing the tension. Cheng et al. [40] show that a bottom-heavy initial mass function would imply *more* hidden mass in early galaxies, worsening the tension. Dressler \& Benson [36] claim good agreement between semi-analytic models and stellar mass data at $z = 6$--12, though their analysis focuses on luminosity-selected samples rather than the most extreme objects.
+- **Revised mass estimates.** Ziegler et al. [39] argue that three effects --- outshining by young stars, assumed star formation histories, and dust attenuation --- can each reduce inferred stellar masses by factors of a few, potentially reducing the tension. Cheng et al. [40] show that a bottom-heavy initial mass function would imply *more* hidden mass in early galaxies, worsening the tension. Dressler & Benson [36] claim good agreement between semi-analytic models and stellar mass data at $z = 6$--12, though their analysis focuses on luminosity-selected samples rather than the most extreme objects.
 
 - **Modified cosmological backgrounds.** Early dark energy models can boost the high-$z$ halo mass function [19], and Shen et al. [41] show that departures from $\Lambda$CDM prior to recombination can accelerate structure formation. These approaches require new physics in the dark energy or inflation sector and introduce additional parameters.
 
@@ -104,14 +104,14 @@ $$H(z) = H_0\sqrt{\Omega_m(1+z)^3 + \Omega_r(1+z)^4 + \Omega_\Lambda} \tag{6}$$
 
 Therefore $a_0(z) = cH(z)/6$ increases with redshift. Using Planck 2018 parameters ($H_0 = 67.4$ km/s/Mpc, $\Omega_m = 0.315$, $\Omega_r = 9.1 \times 10^{-5}$, $\Omega_\Lambda = 0.685$):
 
-| $z$ | $H(z)/H_0$ | $a_0(z)$ [m/s$^2$] | Enhancement |
+| z | H(z)/H₀ | a₀(z) [m/s²] | Enhancement |
 |----:|:----------:|:-------------------:|:-----------:|
-| 0 | 1.0 | $1.09 \times 10^{-10}$ | 1$\times$ |
-| 6 | 10.4 | $1.14 \times 10^{-9}$ | 10$\times$ |
-| 10 | 20.5 | $2.24 \times 10^{-9}$ | 21$\times$ |
-| 12 | 26.4 | $2.88 \times 10^{-9}$ | **26$\times$** |
-| 14 | 32.7 | $3.57 \times 10^{-9}$ | 33$\times$ |
-| 20 | 54.2 | $5.91 \times 10^{-9}$ | 54$\times$ |
+| 0 | 1.0 | 1.09 × 10⁻¹⁰ | 1× |
+| 6 | 10.4 | 1.14 × 10⁻⁹ | 10× |
+| 10 | 20.5 | 2.24 × 10⁻⁹ | 21× |
+| 12 | 26.4 | 2.88 × 10⁻⁹ | **26×** |
+| 14 | 32.7 | 3.57 × 10⁻⁹ | 33× |
+| 20 | 54.2 | 5.91 × 10⁻⁹ | 54× |
 
 **Table 1.** Critical acceleration $a_0(z) = cH(z)/6$ at key redshifts. The enhancement ratio is the same as in v1 because both $a_0$ and $a_0(z{=}0)$ share the factor of 1/6.
 
@@ -135,16 +135,16 @@ $$g = \frac{G\,M_b}{R^2} \tag{8}$$
 
 For the JWST galaxies, we take the observed stellar mass $M_\star$, assume a star formation efficiency of 10\%, and compute the progenitor cloud mass $M_b = M_\star / 0.1$. The results are shown in Table 2.
 
-| Galaxy | $z$ | $\log M_\star$ | $g$ [m/s$^2$] | $a_0(z)$ [m/s$^2$] | $g/a_0$ |
+| Galaxy | z | log M★ | g [m/s²] | a₀(z) [m/s²] | g/a₀ |
 |--------|----:|:-----:|:-----------:|:-------------------:|:-------:|
-| JADES-GS-z14-0 | 14.2 | 8.7 | $4.9 \times 10^{-12}$ | $3.6 \times 10^{-9}$ | $1.3 \times 10^{-3}$ |
-| JADES-GS-z13-0 | 13.2 | 8.1 | $2.7 \times 10^{-12}$ | $3.3 \times 10^{-9}$ | $8.2 \times 10^{-4}$ |
-| JADES-GS-z12-0 | 12.6 | 7.8 | $2.0 \times 10^{-12}$ | $3.1 \times 10^{-9}$ | $6.4 \times 10^{-4}$ |
-| Maisie's Galaxy | 11.4 | 8.5 | $2.8 \times 10^{-12}$ | $2.7 \times 10^{-9}$ | $1.0 \times 10^{-3}$ |
-| GN-z11 | 10.6 | 9.0 | $3.6 \times 10^{-12}$ | $2.4 \times 10^{-9}$ | $1.5 \times 10^{-3}$ |
-| CEERS-1 | 8.9 | 9.5 | $3.8 \times 10^{-12}$ | $1.9 \times 10^{-9}$ | $2.0 \times 10^{-3}$ |
-| CEERS-2 | 7.9 | 9.8 | $3.9 \times 10^{-12}$ | $1.6 \times 10^{-9}$ | $2.4 \times 10^{-3}$ |
-| CEERS-3 | 7.5 | 10.0 | $4.1 \times 10^{-12}$ | $1.5 \times 10^{-9}$ | $2.7 \times 10^{-3}$ |
+| JADES-GS-z14-0 | 14.2 | 8.7 | 4.9 × 10⁻¹² | 3.6 × 10⁻⁹ | 1.3 × 10⁻³ |
+| JADES-GS-z13-0 | 13.2 | 8.1 | 2.7 × 10⁻¹² | 3.3 × 10⁻⁹ | 8.2 × 10⁻⁴ |
+| JADES-GS-z12-0 | 12.6 | 7.8 | 2.0 × 10⁻¹² | 3.1 × 10⁻⁹ | 6.4 × 10⁻⁴ |
+| Maisie's Galaxy | 11.4 | 8.5 | 2.8 × 10⁻¹² | 2.7 × 10⁻⁹ | 1.0 × 10⁻³ |
+| GN-z11 | 10.6 | 9.0 | 3.6 × 10⁻¹² | 2.4 × 10⁻⁹ | 1.5 × 10⁻³ |
+| CEERS-1 | 8.9 | 9.5 | 3.8 × 10⁻¹² | 1.9 × 10⁻⁹ | 2.0 × 10⁻³ |
+| CEERS-2 | 7.9 | 9.8 | 3.9 × 10⁻¹² | 1.6 × 10⁻⁹ | 2.4 × 10⁻³ |
+| CEERS-3 | 7.5 | 10.0 | 4.1 × 10⁻¹² | 1.5 × 10⁻⁹ | 2.7 × 10⁻³ |
 
 **Table 2.** Gravitational accelerations in progenitor clouds of observed JWST galaxies. In all cases $g/a_0 \sim 10^{-3}$: every object is deeply in the modified regime.
 
@@ -170,7 +170,7 @@ $$t_{\rm upper} = \sqrt{\frac{2R}{a_{\rm mod}}} \tag{12}$$
 
 We adopt the geometric mean $t_{\rm mod} = \sqrt{t_{\rm lower} \times t_{\rm upper}}$ as our estimate. The results are shown in Table 3.
 
-| Galaxy | $z$ | $t_{\rm avail}$ [Myr] | $t_{\rm ff}$ (standard) [Myr] | $\eta$ | $t_{\rm mod}$ (modified) [Myr] | $N_{\rm collapse}$ |
+| Galaxy | z | t_avail [Myr] | t_ff (standard) [Myr] | η | t_mod (modified) [Myr] | N_collapse |
 |--------|----:|:------:|:----:|:---:|:----:|:---:|
 | JADES-GS-z14-0 | 14.2 | 190 | 306 | 27.8 | **65** | 2.9 |
 | JADES-GS-z13-0 | 13.2 | 222 | 339 | 35.5 | **64** | 3.4 |
@@ -219,7 +219,7 @@ Haslbauer et al. [20] demonstrated that Milgromian dynamics predicts a higher ab
 
 A growing literature seeks to resolve the JWST tension within or near the standard framework. The approaches fall into three categories:
 
-**Astrophysical adjustments.** Enhanced star formation efficiency [18,37], bursty star formation histories [14,15,38], and AGN contamination corrections [13] address the mass and luminosity estimates of individual objects. Dressler \& Benson [36] argue that semi-analytic models can match stellar mass growth at $z = 6$--12 without new physics. These approaches can reduce the inferred severity of the anomaly but do not address the fundamental timescale problem: at $z > 12$, the standard free-fall time exceeds the age of the universe regardless of how efficiently stars form once collapse occurs.
+**Astrophysical adjustments.** Enhanced star formation efficiency [18,37], bursty star formation histories [14,15,38], and AGN contamination corrections [13] address the mass and luminosity estimates of individual objects. Dressler & Benson [36] argue that semi-analytic models can match stellar mass growth at $z = 6$--12 without new physics. These approaches can reduce the inferred severity of the anomaly but do not address the fundamental timescale problem: at $z > 12$, the standard free-fall time exceeds the age of the universe regardless of how efficiently stars form once collapse occurs.
 
 **Systematic reductions.** Ziegler et al. [39] show that outshining, star formation history assumptions, and dust can each reduce inferred masses by factors of a few, and argue the tension may be less severe than claimed. However, the population-level excess in the UV luminosity function at $z > 12$ [33,34] persists independently of individual mass estimates, and McCaffrey et al. [32] demonstrate that even optimistic simulations struggle to reproduce the observed abundance.
 
@@ -261,91 +261,91 @@ The framework inherits the conceptual solidity of Jacobson's thermodynamic deriv
 
 ## References
 
-[1] I. Labb\'e et al., "A population of red candidate massive galaxies $\sim$600 Myr after the Big Bang," *Nature* **616**, 266 (2023). arXiv:2207.12446
+[1] I. Labbé et al., "A population of red candidate massive galaxies ~600 Myr after the Big Bang," *Nature* **616**, 266 (2023). [arXiv:2207.12446](https://arxiv.org/abs/2207.12446)
 
-[2] B. E. Robertson et al., "Identification and properties of intense star-forming galaxies at redshifts $z > 10$," *Nature Astron.* **7**, 611 (2023). arXiv:2212.04480
+[2] B. E. Robertson et al., "Identification and properties of intense star-forming galaxies at redshifts z > 10," *Nature Astron.* **7**, 611 (2023). [arXiv:2212.04480](https://arxiv.org/abs/2212.04480)
 
-[3] M. Castellano et al., "Early results from GLASS-JWST: Very high-$z$ galaxy candidates," *ApJ Lett.* **938**, L15 (2022). arXiv:2207.09436
+[3] M. Castellano et al., "Early results from GLASS-JWST: Very high-z galaxy candidates," *ApJ Lett.* **938**, L15 (2022). [arXiv:2207.09436](https://arxiv.org/abs/2207.09436)
 
-[4] C. L. Steinhardt et al., "The Impossibly Early Galaxy Problem," *ApJ* **824**, 21 (2016). arXiv:1506.01377
+[4] C. L. Steinhardt et al., "The Impossibly Early Galaxy Problem," *ApJ* **824**, 21 (2016). [arXiv:1506.01377](https://arxiv.org/abs/1506.01377)
 
-[5] A. J. Bunker et al., "JADES NIRSpec Spectroscopy of GN-z11," *A&A* **677**, A88 (2023). arXiv:2302.07256
+[5] A. J. Bunker et al., "JADES NIRSpec Spectroscopy of GN-z11," *A&A* **677**, A88 (2023). [arXiv:2302.07256](https://arxiv.org/abs/2302.07256)
 
-[6] P. Arrabal Haro et al., "Confirmation and refutation of very luminous galaxies in the early universe," *Nature* **622**, 707 (2023). arXiv:2303.15431
+[6] P. Arrabal Haro et al., "Confirmation and refutation of very luminous galaxies in the early universe," *Nature* **622**, 707 (2023). [arXiv:2303.15431](https://arxiv.org/abs/2303.15431)
 
-[7] E. Curtis-Lake et al., "Spectroscopic confirmation of four metal-poor galaxies at $z = 10.3$--$13.2$," *Nature Astron.* **7**, 622 (2023). arXiv:2212.04568
+[7] E. Curtis-Lake et al., "Spectroscopic confirmation of four metal-poor galaxies at z = 10.3--13.2," *Nature Astron.* **7**, 622 (2023). [arXiv:2212.04568](https://arxiv.org/abs/2212.04568)
 
-[8] S. Carniani et al., "A shining cosmic dawn: spectroscopic confirmation of two luminous galaxies at $z \simeq 14$," *Nature* **633**, 318 (2024). arXiv:2405.18485
+[8] S. Carniani et al., "A shining cosmic dawn: spectroscopic confirmation of two luminous galaxies at z ~ 14," *Nature* **633**, 318 (2024). [arXiv:2405.18485](https://arxiv.org/abs/2405.18485)
 
-[9] M. Boylan-Kolchin, "Stress testing $\Lambda$CDM with high-redshift galaxy candidates," *Nature Astron.* **7**, 731 (2023). arXiv:2208.01611
+[9] M. Boylan-Kolchin, "Stress testing LCDM with high-redshift galaxy candidates," *Nature Astron.* **7**, 731 (2023). [arXiv:2208.01611](https://arxiv.org/abs/2208.01611)
 
-[10] S. L. Finkelstein et al., "The Complete CEERS Early Universe Galaxy Sample," *ApJ Lett.* **969**, L2 (2024). arXiv:2311.04279
+[10] S. L. Finkelstein et al., "The Complete CEERS Early Universe Galaxy Sample," *ApJ Lett.* **969**, L2 (2024). [arXiv:2311.04279](https://arxiv.org/abs/2311.04279)
 
-[11] Y. Harikane et al., "A Comprehensive Study of Galaxies at $z \sim 9$--16 Found in the Early JWST Data," *ApJS* **265**, 5 (2023). arXiv:2208.01612
+[11] Y. Harikane et al., "A Comprehensive Study of Galaxies at z ~ 9--16 Found in the Early JWST Data," *ApJS* **265**, 5 (2023). [arXiv:2208.01612](https://arxiv.org/abs/2208.01612)
 
-[12] C. T. Donnan et al., "The evolution of the galaxy UV luminosity function at redshifts $z \sim 8$--15 from deep JWST and ground-based observations," *MNRAS* **518**, 6011 (2023). arXiv:2207.12356
+[12] C. T. Donnan et al., "The evolution of the galaxy UV luminosity function at redshifts z ~ 8--15 from deep JWST and ground-based observations," *MNRAS* **518**, 6011 (2023). [arXiv:2207.12356](https://arxiv.org/abs/2207.12356)
 
-[13] D. J. Kocevski et al., "Hidden Little Monsters: Spectroscopic Identification of Low-Luminosity Broad-Line AGN at $z > 5$," *ApJ Lett.* **954**, L4 (2023). arXiv:2302.00012
+[13] D. J. Kocevski et al., "Hidden Little Monsters: Spectroscopic Identification of Low-Luminosity Broad-Line AGN at z > 5," *ApJ Lett.* **954**, L4 (2023). [arXiv:2302.00012](https://arxiv.org/abs/2302.00012)
 
-[14] C. A. Mason, M. Trenti, and T. Treu, "The brightest galaxies at cosmic dawn," *MNRAS* **521**, 497 (2023). arXiv:2207.14808
+[14] C. A. Mason, M. Trenti, and T. Treu, "The brightest galaxies at cosmic dawn," *MNRAS* **521**, 497 (2023). [arXiv:2207.14808](https://arxiv.org/abs/2207.14808)
 
-[15] J. Mirocha and S. R. Furlanetto, "Balancing the efficiency and stochasticity of star formation with dust at high redshifts," *MNRAS* **519**, 843 (2023). arXiv:2208.12826
+[15] J. Mirocha and S. R. Furlanetto, "Balancing the efficiency and stochasticity of star formation with dust at high redshifts," *MNRAS* **519**, 843 (2023). [arXiv:2208.12826](https://arxiv.org/abs/2208.12826)
 
-[16] R. Endsley et al., "A JWST/NIRCam Study of Key Contributors to Reionization: The Star-forming and Ionizing Properties of UV-faint $z \sim 7$--8 Galaxies" (2022). arXiv:2208.14999
+[16] R. Endsley et al., "A JWST/NIRCam Study of Key Contributors to Reionization: The Star-forming and Ionizing Properties of UV-faint z ~ 7--8 Galaxies" (2022). [arXiv:2208.14999](https://arxiv.org/abs/2208.14999)
 
-[17] R. J. Bouwens et al., "UV luminosity functions at redshifts $z \sim 8$ to $z \sim 15$ from deep JWST observations," *MNRAS* **523**, 1036 (2023). arXiv:2211.02607
+[17] R. J. Bouwens et al., "UV luminosity functions at redshifts z ~ 8 to z ~ 15 from deep JWST observations," *MNRAS* **523**, 1036 (2023). [arXiv:2211.02607](https://arxiv.org/abs/2211.02607)
 
-[18] A. Dekel et al., "Efficient formation of massive galaxies at cosmic dawn by feedback-free starbursts," *MNRAS* **523**, 3201 (2023). arXiv:2303.04827
+[18] A. Dekel et al., "Efficient formation of massive galaxies at cosmic dawn by feedback-free starbursts," *MNRAS* **523**, 3201 (2023). [arXiv:2303.04827](https://arxiv.org/abs/2303.04827)
 
-[19] M. Forconi et al., "Do the Early Galaxies observed by JWST disagree with Planck's CMB polarization measurements?," *JCAP* **2023(10)**, 012 (2023). arXiv:2306.07781
+[19] M. Forconi et al., "Do the Early Galaxies observed by JWST disagree with Planck's CMB polarization measurements?," *JCAP* **2023(10)**, 012 (2023). [arXiv:2306.07781](https://arxiv.org/abs/2306.07781)
 
-[20] M. Haslbauer, P. Kroupa, and I. Banik, "The High-$z$ universe confronts warm dark matter: Galaxy counts, reionisation and the nature of dark matter," *MNRAS* **524**, 3252 (2023). arXiv:2210.14915
+[20] M. Haslbauer, P. Kroupa, and I. Banik, "The High-z universe confronts warm dark matter: Galaxy counts, reionisation and the nature of dark matter," *MNRAS* **524**, 3252 (2023). [arXiv:2210.14915](https://arxiv.org/abs/2210.14915)
 
-[21] T. Jacobson, "Thermodynamics of Spacetime: The Einstein Equation of State," *Phys. Rev. Lett.* **75**, 1260 (1995). arXiv:gr-qc/9504004
+[21] T. Jacobson, "Thermodynamics of Spacetime: The Einstein Equation of State," *Phys. Rev. Lett.* **75**, 1260 (1995). [arXiv:gr-qc/9504004](https://arxiv.org/abs/gr-qc/9504004)
 
-[22] M. E. McCulloch, "Inertia from an Asymmetric Casimir Effect," *EPL* **101**, 59001 (2013). arXiv:1302.2775
+[22] M. E. McCulloch, "Inertia from an Asymmetric Casimir Effect," *EPL* **101**, 59001 (2013). [arXiv:1302.2775](https://arxiv.org/abs/1302.2775)
 
-[23] M. E. McCulloch, "Galaxy Rotations from Quantised Inertia and Visible Matter Only," *Astrophys. Space Sci.* **362**, 149 (2017). arXiv:1709.04918
+[23] M. E. McCulloch, "Galaxy Rotations from Quantised Inertia and Visible Matter Only," *Astrophys. Space Sci.* **362**, 149 (2017). [arXiv:1709.04918](https://arxiv.org/abs/1709.04918)
 
-[24] V. Costantino and T. Broadhurst, "A First Attempt to Differentiate between Modified Gravity and Modified Inertia," *A&A* **636**, A15 (2020). arXiv:2001.03348
+[24] V. Costantino and T. Broadhurst, "A First Attempt to Differentiate between Modified Gravity and Modified Inertia," *A&A* **636**, A15 (2020). [arXiv:2001.03348](https://arxiv.org/abs/2001.03348)
 
-[25] C. Skordis and T. Zlosnik, "New Relativistic Theory for Modified Newtonian Dynamics," *Phys. Rev. Lett.* **127**, 161302 (2021). arXiv:2007.00082
+[25] C. Skordis and T. Zlosnik, "New Relativistic Theory for Modified Newtonian Dynamics," *Phys. Rev. Lett.* **127**, 161302 (2021). [arXiv:2007.00082](https://arxiv.org/abs/2007.00082)
 
-[26] A. Aguirre, J. Schaye, and E. Quataert, "Problems for Modified Newtonian Dynamics in Clusters and the Ly$\alpha$ Forest?," *ApJ* **561**, 550 (2001). arXiv:astro-ph/0105184
+[26] A. Aguirre, J. Schaye, and E. Quataert, "Problems for Modified Newtonian Dynamics in Clusters and the Lya Forest?," *ApJ* **561**, 550 (2001). [arXiv:astro-ph/0105184](https://arxiv.org/abs/astro-ph/0105184)
 
-[27] L. Ferreira et al., "Panic! at the Disks: First Rest-frame Optical Observations of Galaxy Structure at $z > 3$," *ApJ Lett.* **938**, L2 (2022). arXiv:2210.01110
+[27] L. Ferreira et al., "Panic! at the Disks: First Rest-frame Optical Observations of Galaxy Structure at z > 3," *ApJ Lett.* **938**, L2 (2022). [arXiv:2210.01110](https://arxiv.org/abs/2210.01110)
 
-[28] J. S. Kartaltepe et al., "CEERS Key Paper III: The Diversity of Galaxy Structure and Morphology at $z = 3$--9 with JWST," *ApJ Lett.* **946**, L15 (2023). arXiv:2210.14713
+[28] J. S. Kartaltepe et al., "CEERS Key Paper III: The Diversity of Galaxy Structure and Morphology at z = 3--9 with JWST," *ApJ Lett.* **946**, L15 (2023). [arXiv:2210.14713](https://arxiv.org/abs/2210.14713)
 
 [29] K. Brodie, "Quantized Inertia as a Boundary Correction to Jacobson's Thermodynamic Spacetime" (2026). DOI: [10.5281/zenodo.18664800](https://doi.org/10.5281/zenodo.18664800)
 
 [30] K. Brodie, "MOND from Horizon Thermodynamics: Deriving the Radial Acceleration Relation with Zero Free Parameters" (2026). DOI: [10.5281/zenodo.18677307](https://doi.org/10.5281/zenodo.18677307)
 
-[31] C. T. Donnan et al., "Spectroscopic confirmation of a large and luminous galaxy with weak emission lines at $z = 13.53$" (2026). arXiv:2601.11515
+[31] C. T. Donnan et al., "Spectroscopic confirmation of a large and luminous galaxy with weak emission lines at z = 13.53" (2026). [arXiv:2601.11515](https://arxiv.org/abs/2601.11515)
 
-[32] J. McCaffrey et al., "Beyond No Tension: JWST $z > 10$ Galaxies Push Simulations to the Limit" (2025). arXiv:2509.07695
+[32] J. McCaffrey et al., "Beyond No Tension: JWST z > 10 Galaxies Push Simulations to the Limit" (2025). [arXiv:2509.07695](https://arxiv.org/abs/2509.07695)
 
-[33] I. Chemerynska et al., "The first GLIMPSE of the faint galaxy population at Cosmic Dawn with JWST: The evolution of the ultraviolet luminosity function across $z \sim 9$--15" (2025). arXiv:2509.24881
+[33] I. Chemerynska et al., "The first GLIMPSE of the faint galaxy population at Cosmic Dawn with JWST: The evolution of the ultraviolet luminosity function across z ~ 9--15" (2025). [arXiv:2509.24881](https://arxiv.org/abs/2509.24881)
 
-[34] M. Franco et al., "Physical properties of galaxies and the UV Luminosity Function from $z \sim 6$ to $z \sim 14$ in COSMOS-Web" (2025). arXiv:2508.04791
+[34] M. Franco et al., "Physical properties of galaxies and the UV Luminosity Function from z ~ 6 to z ~ 14 in COSMOS-Web" (2025). [arXiv:2508.04791](https://arxiv.org/abs/2508.04791)
 
-[35] C. L. Pollock et al., "Characterising Ly$\alpha$ damping wings at the onset of reionisation: Evidence for highly efficient star formation driven by dense, neutral gas in UV-bright galaxies at $z > 9$" (2026). arXiv:2602.11783
+[35] C. L. Pollock et al., "Characterising Lya damping wings at the onset of reionisation: Evidence for highly efficient star formation driven by dense, neutral gas in UV-bright galaxies at z > 9" (2026). [arXiv:2602.11783](https://arxiv.org/abs/2602.11783)
 
-[36] A. Dressler and A. Benson, "Stellar Mass Growth in the First Galaxies: Theory and Observation" (2026). arXiv:2602.01549
+[36] A. Dressler and A. Benson, "Stellar Mass Growth in the First Galaxies: Theory and Observation" (2026). [arXiv:2602.01549](https://arxiv.org/abs/2602.01549)
 
-[37] A. Kar, S. Alam, and J. Silk, "Beyond Extreme Burstiness: Evolving Star Formation Efficiency as the Key to Early Galaxy Abundance" (2025). arXiv:2507.20606
+[37] A. Kar, S. Alam, and J. Silk, "Beyond Extreme Burstiness: Evolving Star Formation Efficiency as the Key to Early Galaxy Abundance" (2025). [arXiv:2507.20606](https://arxiv.org/abs/2507.20606)
 
-[38] J. B. Mu\~noz et al., "Relatively Fast and Reasonably Furious: Evidence for Increased Burstiness in Smaller Halos at Cosmic Dawn" (2026). arXiv:2601.07912
+[38] J. B. Munoz et al., "Relatively Fast and Reasonably Furious: Evidence for Increased Burstiness in Smaller Halos at Cosmic Dawn" (2026). [arXiv:2601.07912](https://arxiv.org/abs/2601.07912)
 
-[39] J. J. Ziegler et al., "Explaining the 'too massive' high-redshift galaxies in JWST data: numerical study of three effects and a simple relation" (2025). arXiv:2507.21409
+[39] J. J. Ziegler et al., "Explaining the 'too massive' high-redshift galaxies in JWST data: numerical study of three effects and a simple relation" (2025). [arXiv:2507.21409](https://arxiv.org/abs/2507.21409)
 
-[40] C. M. Cheng et al., "Bottom-heavy initial mass functions reveal hidden mass in early galaxies" (2026). arXiv:2601.20864
+[40] C. M. Cheng et al., "Bottom-heavy initial mass functions reveal hidden mass in early galaxies" (2026). [arXiv:2601.20864](https://arxiv.org/abs/2601.20864)
 
-[41] X. Shen et al., "The Cosmic Rush Hour: Rapid Formation of Bright, Massive, Disky, Star-Forming Galaxies as Signatures of Early-Universe Physics" (2025). arXiv:2509.19427
+[41] X. Shen et al., "The Cosmic Rush Hour: Rapid Formation of Bright, Massive, Disky, Star-Forming Galaxies as Signatures of Early-Universe Physics" (2025). [arXiv:2509.19427](https://arxiv.org/abs/2509.19427)
 
-[42] J. W. Moffat, "Galaxy Formation in the Early Universe" (2024). arXiv:2412.03534
+[42] J. W. Moffat, "Galaxy Formation in the Early Universe" (2024). [arXiv:2412.03534](https://arxiv.org/abs/2412.03534)
 
-[43] E. Curtis-Lake et al., "JADES Data Release 4 Paper I: Sample Selection, Observing Strategy and Redshifts of the complete spectroscopic sample" (2025). arXiv:2510.01033
+[43] E. Curtis-Lake et al., "JADES Data Release 4 Paper I: Sample Selection, Observing Strategy and Redshifts of the complete spectroscopic sample" (2025). [arXiv:2510.01033](https://arxiv.org/abs/2510.01033)
 
 ---
 
