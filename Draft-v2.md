@@ -1,6 +1,7 @@
 # Accelerated Structure Formation from Horizon Thermodynamics: Resolving the JWST Early Massive Galaxy Anomaly
 
 **K. Brodie (2026)**
+DOI: [10.5281/zenodo.18665075](https://doi.org/10.5281/zenodo.18665075)
 
 ---
 
