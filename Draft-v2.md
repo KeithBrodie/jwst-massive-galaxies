@@ -24,7 +24,9 @@ Subsequent work has reduced the most extreme mass estimates through identificati
 
 The anomaly is most sharply stated as a timescale problem. At $z = 12$, the age of the universe is 366 Myr. The first stars form after $z \sim 30$ ($t \sim 99$ Myr), leaving approximately 267 Myr for galaxy assembly. In $\Lambda$CDM, the standard free-fall time for a protogalactic baryonic cloud at 5$\times$ the mean density is:
 
-$$t_{\rm ff} = \sqrt{\frac{3\pi}{32\,G\,\rho}} \approx 300\text{--}400\ {\rm Myr} \quad (z \sim 12)$$
+```math
+t_{\rm ff} = \sqrt{\frac{3\pi}{32\,G\,\rho}} \approx 300\text{--}400\ {\rm Myr} \qquad (z \sim 12)
+```
 
 This exceeds the available cosmic time. Even a single gravitational collapse cannot be completed, let alone the multiple generations of collapse, star formation, and feedback required to build a galaxy with $M_\star \sim 10^9\,M_\odot$.
 
@@ -46,7 +48,9 @@ Several mechanisms have been proposed to alleviate the tension within or near th
 
 We show that the JWST anomaly is resolved naturally by the thermodynamic spacetime framework [21] when entanglement sharing between the local Rindler horizon and the cosmic Hubble horizon modifies the effective inertia of matter. This framework, developed in [29] and quantitatively validated against the SPARC radial acceleration relation in [30], derives a modification to the inertial mass at accelerations below
 
-$$a_0(z) = \frac{c\,H(z)}{6} \tag{1}$$
+```math
+a_0(z) = \frac{c\,H(z)}{6} \qquad \text{(1)}
+```
 
 from Jacobson's thermodynamic derivation of Einstein's equations [21], with no free parameters. The factor of 6 is a geometric constant arising from the backward-hemisphere $\cos^2\theta$ integral over the overlap between planar Rindler and spherical Hubble entanglement modes [30]. The critical acceleration $a_0$ is not inserted by hand (as in MOND) but emerges from the geometry: it is set by the competition between two horizons for vacuum entanglement.
 
@@ -73,21 +77,29 @@ In Jacobson's original derivation, the Rindler horizon entropy is computed as if
 
 By entanglement monogamy, both horizons cannot be fully entangled with the same mode. The effective entanglement available to the Rindler horizon is reduced by a sharing fraction [29]:
 
-$$f(a) = \frac{T_R}{T_R + T_{H,\rm eff}} = \frac{a}{a + a_0} \tag{2}$$
+```math
+f(a) = \frac{T_R}{T_R + T_{H,\rm eff}} = \frac{a}{a + a_0} \qquad \text{(2)}
+```
 
 where $T_{H,\rm eff} = T_H / 6$ is the effective Hubble temperature at the Rindler horizon, reduced by a geometric factor of 6 from the backward-hemisphere $\cos^2\theta$ integral over the overlap between planar (Rindler) and spherical (Hubble) entanglement modes [30]. This gives:
 
-$$a_0 \equiv \frac{cH}{6} \tag{3}$$
+```math
+a_0 \equiv \frac{cH}{6} \qquad \text{(3)}
+```
 
 ### 2.3 The Modified Equation of Motion
 
 The sharing function $f(a)$ enters Jacobson's Clausius relation as $\delta Q = T_R\,f(a)\,dS$, yielding an effective inertial mass $m_i = f(a)\,m_g$. The equation of motion $F = m_i\,a$ with gravitational force $F = m_g\,g$ gives:
 
-$$g = f(a)\,a = \frac{a^2}{a + a_0} \tag{4}$$
+```math
+g = f(a)\,a = \frac{a^2}{a + a_0} \qquad \text{(4)}
+```
 
 Solving for $a$:
 
-$$a = \frac{g + \sqrt{g^2 + 4\,g\,a_0}}{2} \tag{5}$$
+```math
+a = \frac{g + \sqrt{g^2 + 4\,g\,a_0}}{2} \qquad \text{(5)}
+```
 
 This has the correct limits:
 - **High acceleration** ($g \gg a_0$): $a \to g$ (standard Newtonian dynamics)
@@ -100,7 +112,9 @@ The deep-MOND limit $a = \sqrt{g\,a_0}$ is the same scaling that produces flat r
 
 The Hubble parameter evolves as:
 
-$$H(z) = H_0\sqrt{\Omega_m(1+z)^3 + \Omega_r(1+z)^4 + \Omega_\Lambda} \tag{6}$$
+```math
+H(z) = H_0\sqrt{\Omega_m(1+z)^3 + \Omega_r(1+z)^4 + \Omega_\Lambda} \qquad \text{(6)}
+```
 
 Therefore $a_0(z) = cH(z)/6$ increases with redshift. Using Planck 2018 parameters ($H_0 = 67.4$ km/s/Mpc, $\Omega_m = 0.315$, $\Omega_r = 9.1 \times 10^{-5}$, $\Omega_\Lambda = 0.685$):
 
@@ -127,11 +141,15 @@ We emphasize that the Friedmann equation governing the background expansion is u
 
 Consider a protogalactic baryonic cloud of mass $M_b$ at redshift $z$, with density $\rho = \delta \times \rho_{\rm mean}(z)$ at turnaround ($\delta \sim 5$). The cloud radius is:
 
-$$R = \left(\frac{3\,M_b}{4\pi\,\rho}\right)^{1/3} \tag{7}$$
+```math
+R = \left(\frac{3\,M_b}{4\pi\,\rho}\right)^{1/3} \qquad \text{(7)}
+```
 
 and the Newtonian gravitational acceleration at the cloud edge is:
 
-$$g = \frac{G\,M_b}{R^2} \tag{8}$$
+```math
+g = \frac{G\,M_b}{R^2} \qquad \text{(8)}
+```
 
 For the JWST galaxies, we take the observed stellar mass $M_\star$, assume a star formation efficiency of 10\%, and compute the progenitor cloud mass $M_b = M_\star / 0.1$. The results are shown in Table 2.
 
@@ -150,23 +168,31 @@ For the JWST galaxies, we take the observed stellar mass $M_\star$, assume a sta
 
 The ratio $g/a_0 \sim 10^{-3}$ across all objects means we are firmly in the deep-MOND limit where $g \ll a_0$, and the self-consistent acceleration (Eq. 5) is approximately $a \approx \sqrt{g\,a_0(z)}$. The enhancement factor is:
 
-$$\eta \equiv \frac{a}{g} \approx \sqrt{\frac{a_0(z)}{g}} \sim 20\text{--}40 \tag{9}$$
+```math
+\eta \equiv \frac{a}{g} \approx \sqrt{\frac{a_0(z)}{g}} \sim 20\text{--}40 \qquad \text{(9)}
+```
 
 ### 3.2 Modified Collapse Timescale
 
 The standard free-fall time for a uniform sphere of density $\rho$ is:
 
-$$t_{\rm ff} = \sqrt{\frac{3\pi}{32\,G\,\rho}} \tag{10}$$
+```math
+t_{\rm ff} = \sqrt{\frac{3\pi}{32\,G\,\rho}} \qquad \text{(10)}
+```
 
 In the modified regime, the effective acceleration is enhanced by factor $\eta$. The collapse timescale can be estimated by two methods that bracket the true value:
 
 **Lower bound** ($\sqrt{\eta}$ scaling): The free-fall time scales inversely with the square root of the effective acceleration:
 
-$$t_{\rm lower} = \frac{t_{\rm ff}}{\sqrt{\eta}} \tag{11}$$
+```math
+t_{\rm lower} = \frac{t_{\rm ff}}{\sqrt{\eta}} \qquad \text{(11)}
+```
 
 **Upper bound** (constant-acceleration approximation): In the deep-MOND limit, the effective acceleration $a \approx \sqrt{g\,a_0}$ is approximately constant during the early phase of collapse (before the cloud has contracted significantly). This gives:
 
-$$t_{\rm upper} = \sqrt{\frac{2R}{a_{\rm mod}}} \tag{12}$$
+```math
+t_{\rm upper} = \sqrt{\frac{2R}{a_{\rm mod}}} \qquad \text{(12)}
+```
 
 We adopt the geometric mean $t_{\rm mod} = \sqrt{t_{\rm lower} \times t_{\rm upper}}$ as our estimate. The results are shown in Table 3.
 
