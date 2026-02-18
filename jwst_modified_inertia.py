@@ -1,12 +1,17 @@
 """
-JWST Massive Early Galaxies: Modified Inertia Analysis
-=======================================================
+JWST Massive Early Galaxies: Modified Inertia Analysis (v2)
+============================================================
 
 Core calculation for Paper 3.
 
-Physics: Jacobson thermodynamic spacetime + finite Hubble boundary
-         → modified inertia with a_0(z) = c H(z)
-         → accelerated gravitational collapse at high z
+Physics: Jacobson thermodynamic spacetime + two-horizon entanglement sharing
+         -> modified inertia with a_0(z) = c H(z) / 6
+         -> f(a) = a / (a + a_0): sharing function from Paper 4
+         -> accelerated gravitational collapse at high z
+
+The geometric factor 1/6 comes from the backward-hemisphere cos^2(theta)
+integral over mode overlap between planar Rindler and spherical Hubble
+entanglement (Paper 4, Eq. 13).
 
 Compares modified collapse timescales against JWST observations.
 """
@@ -39,8 +44,12 @@ OL = 0.685           # dark energy density
 Ob = 0.0493          # baryon density
 fb = Ob / Om         # baryon fraction = 0.156
 
+# Geometric factor from backward-hemisphere cos^2(theta) integral
+# = (1/2) * (1/3) = 1/6  [Paper 4, Sec. III.C]
+GEOM = 6.0
+
 # Present-day critical acceleration
-a0_now = c * H0      # = 6.55e-10 m/s^2
+a0_now = c * H0 / GEOM   # = 1.09e-10 m/s^2
 
 # =============================================================
 # COSMOLOGICAL FUNCTIONS
@@ -55,8 +64,8 @@ def H(z):
     return H0 * E(z)
 
 def a0(z):
-    """Critical acceleration a_0(z) = c H(z) in m/s^2."""
-    return c * H(z)
+    """Critical acceleration a_0(z) = c H(z) / 6 in m/s^2."""
+    return c * H(z) / GEOM
 
 def age_at_z(z):
     """Age of universe at redshift z, in seconds."""
@@ -97,7 +106,7 @@ jwst_galaxies = [
     ("JADES-GS-z12-0",   12.6,  7.8, 0.3, "Curtis-Lake+23", "Spectroscopic"),
     ("Maisie's Galaxy",   11.4,  8.5, 0.4, "Arrabal Haro+23", "Revised from z_phot~14"),
     ("GN-z11",            10.6,  9.0, 0.3, "Bunker+23", "AGN signatures"),
-    # Labbé et al. candidates (revised masses after AGN/SFH corrections)
+    # Labbe et al. candidates (revised masses after AGN/SFH corrections)
     ("CEERS-1",            8.9,  9.5, 0.5, "Labbe+23/Barro+24", "Mass revised down"),
     ("CEERS-2",            7.9,  9.8, 0.5, "Labbe+23/Barro+24", "Mass revised down"),
     ("CEERS-3",            7.5, 10.0, 0.5, "Labbe+23/Barro+24", "Most massive candidate"),
@@ -105,16 +114,37 @@ jwst_galaxies = [
 
 
 # =============================================================
-# MODIFIED INERTIA PHYSICS
+# MODIFIED INERTIA PHYSICS (v2: entanglement sharing)
 # =============================================================
+
+def sharing_function(a, a0z):
+    """
+    Entanglement sharing function f(a) = a / (a + a_0).
+
+    From two-horizon entropy sharing (Paper 4):
+    f = T_R / (T_R + T_H,eff)  with  T_H,eff = T_H / 6.
+
+    This gives the fraction of vacuum entanglement available to
+    the Rindler horizon, determining the effective inertial mass:
+    m_i = f(a) * m_g.
+    """
+    return a / (a + a0z)
+
 
 def modified_acceleration(g_newt, z):
     """
-    Self-consistent acceleration under modified inertia.
+    Self-consistent acceleration under modified inertia (v2).
 
-    From m_i(a) = m_g [1 - (a0/a)^2], the equation of motion gives:
-        a^2 - g*a - a0^2 = 0
-    Solution: a = (g + sqrt(g^2 + 4*a0^2)) / 2
+    From f(a) = a/(a + a_0), the equation of motion
+        m_g * g = m_i(a) * a = m_g * f(a) * a
+    gives:
+        g = a^2 / (a + a_0)
+        => a^2 - g*a - g*a_0 = 0
+    Solution: a = (g + sqrt(g^2 + 4*g*a_0)) / 2
+
+    Limits:
+        g >> a_0:  a -> g  (Newtonian)
+        g << a_0:  a -> sqrt(g * a_0)  (deep-MOND)
 
     Parameters:
         g_newt: Newtonian gravitational acceleration (m/s^2)
@@ -124,7 +154,7 @@ def modified_acceleration(g_newt, z):
         eta: enhancement factor a_mod / g_newt
     """
     a0z = a0(z)
-    a_mod = (g_newt + np.sqrt(g_newt**2 + 4 * a0z**2)) / 2
+    a_mod = (g_newt + np.sqrt(g_newt**2 + 4 * g_newt * a0z)) / 2
     eta = a_mod / g_newt
     return a_mod, eta
 
@@ -161,13 +191,15 @@ def collapse_timescale(M_baryonic, z, overdensity=5.0):
     # Modified acceleration and enhancement
     a_mod, eta = modified_acceleration(g_edge, z)
 
-    # Modified collapse: two estimates
+    # Modified collapse: two estimates that bracket the true value
     # 1) sqrt(eta) scaling of free-fall time
+    #    (free-fall time ~ 1/sqrt(a_eff), so t_mod ~ t_std / sqrt(eta))
     t_ff_mod_eta = t_ff_std / np.sqrt(eta)
 
-    # 2) Constant-acceleration approximation (deep QI: a ~ a0)
-    a0z = a0(z)
-    t_ff_mod_const = np.sqrt(2 * R / a0z)
+    # 2) Constant-acceleration approximation
+    #    In the deep-MOND limit, a ~ sqrt(g * a_0), which is approximately
+    #    constant during early collapse. Use a_mod at the cloud edge.
+    t_ff_mod_const = np.sqrt(2 * R / a_mod)
 
     # Geometric mean of the two estimates
     t_ff_mod_geom = np.sqrt(t_ff_mod_eta * t_ff_mod_const)
@@ -178,8 +210,9 @@ def collapse_timescale(M_baryonic, z, overdensity=5.0):
         'rho_cloud': rho_cloud,
         'R_kpc': R / kpc,
         'g_edge': g_edge,
-        'a0_z': a0z,
-        'g_over_a0': g_edge / a0z,
+        'a0_z': a0(z),
+        'a_mod': a_mod,
+        'g_over_a0': g_edge / a0(z),
         'eta': eta,
         't_ff_std_Myr': t_ff_std / Myr,
         't_ff_mod_eta_Myr': t_ff_mod_eta / Myr,
@@ -198,16 +231,9 @@ def max_stellar_mass_standard(z, sfe=0.1):
     Approximate: M_halo,max where nu(M, z) ~ 4-5
     (a few expected in Hubble volume).
     """
-    # sigma(M) ~ sigma_8 * (M / M_8)^{-alpha} with alpha ~ 0.3-0.5
-    # For simplicity, use the growth factor scaling
     sigma_8 = 0.811  # Planck 2018
     Dz = D_norm(z)
 
-    # At z=0, 4-sigma halos have M ~ 10^15 Msun
-    # sigma(M) * D(z) = delta_c / nu, with nu ~ 4
-    # sigma(M) = delta_c / (nu * D(z))
-    # Map sigma(M) to M using approximate relation:
-    # sigma(M) ~ sigma_8 * (M / 10^{13} Msun)^{-1/3} (rough)
     nu_target = 4.0
     sigma_needed = 1.686 / (nu_target * Dz)
 
@@ -216,49 +242,6 @@ def max_stellar_mass_standard(z, sfe=0.1):
     M_star = sfe * fb * M_halo
 
     return M_star, M_halo
-
-
-def max_stellar_mass_modified(z, t_sf_fraction=0.5):
-    """
-    Maximum stellar mass at redshift z with modified inertia.
-
-    In modified inertia framework (no dark matter):
-    - Baryonic gas collapses directly
-    - Collapse timescale is ~10-30 Myr
-    - Multiple generations of collapse possible
-    - Limited by available baryonic mass and cosmic time
-
-    Parameters:
-        z: redshift
-        t_sf_fraction: fraction of available time spent forming stars
-    Returns:
-        M_star_max in kg
-    """
-    # Time available from z=30 to z
-    t_avail = age_at_z(z) - age_at_z(30)
-
-    # Star formation time
-    t_sf = t_sf_fraction * t_avail
-
-    # In modified regime, collapse takes ~20 Myr
-    # Number of collapse generations possible
-    t_collapse_typical = 20 * Myr  # conservative estimate
-    n_generations = t_sf / t_collapse_typical
-
-    # Baryonic mass within a comoving volume of ~(1 Mpc)^3
-    rho_crit_0 = 3 * H0**2 / (8 * np.pi * G)
-    rho_baryon_0 = rho_crit_0 * Ob
-    V_comoving = (1 * Mpc)**3  # 1 Mpc^3
-    M_baryon_available = rho_baryon_0 * V_comoving
-
-    # With SFE ~ 10% per collapse and multiple generations,
-    # effective SFE can reach 30-50%
-    effective_sfe = 1 - (1 - 0.1)**n_generations  # compound efficiency
-    effective_sfe = min(effective_sfe, 0.5)  # cap at 50%
-
-    M_star = effective_sfe * M_baryon_available
-
-    return M_star
 
 
 # =============================================================
@@ -274,10 +257,13 @@ def print_header(title):
 def run_analysis():
     """Run the full analysis and generate outputs."""
 
+    print(f"a_0(z=0) = cH_0/6 = {a0_now:.2e} m/s^2")
+    print(f"  (cf. Milgrom a_0 = 1.2e-10 m/s^2, ratio = {a0_now/1.2e-10:.2f})")
+
     # ---------------------------------------------------------
     # 1. a_0(z) evolution
     # ---------------------------------------------------------
-    print_header("1. CRITICAL ACCELERATION a_0(z) = cH(z)")
+    print_header("1. CRITICAL ACCELERATION a_0(z) = cH(z)/6")
     print(f"{'z':>4s}  {'H(z)/H0':>8s}  {'a0(z) [m/s^2]':>14s}  {'a0(z)/a0(0)':>12s}  {'t(z) [Myr]':>11s}")
     print("-" * 60)
 
@@ -295,7 +281,7 @@ def run_analysis():
     results = []
     for name, z, logM, logM_err, ref, notes in jwst_galaxies:
         M_star = 10**logM * Msun
-        # Baryonic mass of progenitor cloud (assume SFE ~ 10-30%)
+        # Baryonic mass of progenitor cloud (assume SFE ~ 10%)
         M_bary = M_star / 0.1  # gas mass needed at 10% SFE
 
         r = collapse_timescale(M_bary, z)
@@ -311,8 +297,9 @@ def run_analysis():
         print(f"  Cloud radius at turnaround: {r['R_kpc']:.1f} kpc")
         print(f"  Edge gravitational accel: {r['g_edge']:.2e} m/s^2")
         print(f"  a_0(z={z}): {r['a0_z']:.2e} m/s^2")
-        print(f"  g/a_0 = {r['g_over_a0']:.2e}  (deep QI regime: << 1)")
-        print(f"  Enhancement factor eta: {r['eta']:.0f}")
+        print(f"  g/a_0 = {r['g_over_a0']:.2e}  (deep modified regime: << 1)")
+        print(f"  Modified accel (deep-MOND): {r['a_mod']:.2e} m/s^2")
+        print(f"  Enhancement factor eta: {r['eta']:.1f}")
         print(f"  Standard free-fall: {r['t_ff_std_Myr']:.0f} Myr")
         print(f"  Modified (sqrt eta): {r['t_ff_mod_eta_Myr']:.1f} Myr")
         print(f"  Modified (const accel): {r['t_ff_mod_const_Myr']:.1f} Myr")
@@ -349,16 +336,15 @@ def run_analysis():
     print("For a 10^10 Msun baryonic cloud (-> 10^9 Msun galaxy at 10% SFE):")
     print()
     M_test = 1e10 * Msun
-    print(f"{'z':>4s}  {'t_avail [Myr]':>13s}  {'t_ff,std [Myr]':>14s}  {'t_ff,mod [Myr]':>14s}  {'Ratio':>7s}  {'N_collapses':>11s}  {'Feasible?':>10s}")
+    print(f"{'z':>4s}  {'t_avail [Myr]':>13s}  {'t_ff,std [Myr]':>14s}  {'t_ff,mod [Myr]':>14s}  {'eta':>7s}  {'N_collapses':>11s}  {'Feasible?':>10s}")
     print("-" * 85)
 
     for z in [6, 8, 10, 12, 14, 17, 20]:
         r = collapse_timescale(M_test, z)
         t_avail = (age_at_z(z) - age_at_z(30)) / Myr
-        ratio = r['t_ff_std_Myr'] / r['t_ff_mod_geom_Myr']
         n_coll = t_avail / r['t_ff_mod_geom_Myr']
         feasible = "YES" if n_coll >= 1.0 else "NO"
-        print(f"{z:4d}  {t_avail:13.0f}  {r['t_ff_std_Myr']:14.0f}  {r['t_ff_mod_geom_Myr']:14.1f}  {ratio:7.0f}  {n_coll:11.1f}  {feasible:>10s}")
+        print(f"{z:4d}  {t_avail:13.0f}  {r['t_ff_std_Myr']:14.0f}  {r['t_ff_mod_geom_Myr']:14.1f}  {r['eta']:7.1f}  {n_coll:11.1f}  {feasible:>10s}")
 
     # ---------------------------------------------------------
     # 5. Growth factor enhancement analysis
@@ -394,8 +380,8 @@ def run_analysis():
     # 6. Summary table for paper
     # ---------------------------------------------------------
     print_header("6. SUMMARY: CAN MODIFIED INERTIA EXPLAIN EACH JWST GALAXY?")
-    print(f"{'Galaxy':>20s}  {'z':>5s}  {'logM*':>6s}  {'t_avail':>8s}  {'t_coll,mod':>10s}  {'N_coll':>7s}  {'Verdict':>10s}")
-    print("-" * 78)
+    print(f"{'Galaxy':>20s}  {'z':>5s}  {'logM*':>6s}  {'g/a0':>8s}  {'eta':>7s}  {'t_avail':>8s}  {'t_coll,mod':>10s}  {'N_coll':>7s}  {'Verdict':>10s}")
+    print("-" * 95)
 
     for name, z, logM, r, t_avail, t_universe in results:
         t_mod = r['t_ff_mod_geom_Myr']
@@ -406,7 +392,7 @@ def run_analysis():
             verdict = "FEASIBLE"
         else:
             verdict = "TIGHT"
-        print(f"{name:>20s}  {z:5.1f}  {logM:6.1f}  {t_avail:7.0f} My  {t_mod:8.1f} My  {n_coll:7.1f}  {verdict:>10s}")
+        print(f"{name:>20s}  {z:5.1f}  {logM:6.1f}  {r['g_over_a0']:8.2e}  {r['eta']:7.1f}  {t_avail:7.0f} My  {t_mod:8.1f} My  {n_coll:7.1f}  {verdict:>10s}")
 
     print("\nVerdicts: EASY = multiple collapses possible, FEASIBLE = at least one, TIGHT = marginal")
 
@@ -417,7 +403,8 @@ def make_figures(results):
     """Generate figures for the paper."""
 
     fig, axes = plt.subplots(2, 2, figsize=(12, 10))
-    fig.suptitle("Modified Inertia and JWST Early Massive Galaxies", fontsize=14, fontweight='bold')
+    fig.suptitle("Modified Inertia and JWST Early Massive Galaxies (v2: entanglement sharing)",
+                 fontsize=13, fontweight='bold')
 
     # ---------------------------------------------------------
     # Fig 1: a_0(z) evolution
@@ -427,9 +414,10 @@ def make_figures(results):
     a0_arr = np.array([a0(z) for z in z_arr])
 
     ax.semilogy(z_arr, a0_arr, 'b-', linewidth=2)
-    ax.axhline(a0_now, color='gray', linestyle='--', alpha=0.5, label=r'$a_0(z=0) = cH_0$')
+    ax.axhline(a0_now, color='gray', linestyle='--', alpha=0.5, label=r'$a_0(z{=}0) = cH_0/6$')
+    ax.axhline(1.2e-10, color='green', linestyle=':', alpha=0.5, label=r'Milgrom $a_0 = 1.2\times10^{-10}$')
     ax.set_xlabel('Redshift $z$')
-    ax.set_ylabel(r'$a_0(z) = cH(z)$ [m/s$^2$]')
+    ax.set_ylabel(r'$a_0(z) = cH(z)/6$ [m/s$^2$]')
     ax.set_title(r'Critical acceleration $a_0(z)$')
 
     # Mark JWST galaxy redshifts
@@ -515,14 +503,14 @@ def make_figures(results):
         ax.semilogy(z_arr3, ratios, color=color, linewidth=2, label=label)
 
     ax.axhline(1.0, color='black', linestyle='--', alpha=0.5,
-               label=r'$g = a_0(z)$ (QI boundary)')
+               label=r'$g = a_0(z)$ (transition)')
     ax.fill_between(z_arr3, 0, 1, alpha=0.1, color='blue')
-    ax.text(12, 0.3, 'Deep QI regime\n(modified inertia dominant)', fontsize=9,
+    ax.text(12, 0.3, 'Deep modified regime\n(entanglement sharing dominant)', fontsize=9,
             ha='center', style='italic', color='blue')
 
     ax.set_xlabel('Redshift $z$')
     ax.set_ylabel(r'$g_{\rm cloud} / a_0(z)$')
-    ax.set_title('Protogalactic clouds: QI regime check')
+    ax.set_title('Protogalactic clouds: regime check')
     ax.legend(fontsize=8, loc='upper right')
     ax.set_ylim(1e-5, 10)
 
