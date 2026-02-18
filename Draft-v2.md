@@ -6,7 +6,7 @@
 
 ## Abstract
 
-The James Webb Space Telescope has revealed galaxies with stellar masses of $10^9$--$10^{10}\,M_\odot$ at redshifts $z > 10$, within 400 Myr of the Big Bang. In standard $\Lambda$CDM cosmology, the free-fall timescale of protogalactic baryonic clouds at these epochs exceeds the age of the universe, and the required dark matter halos represent $>10\sigma$ fluctuations in the primordial density field. We show that these galaxies form naturally --- with no free parameters --- in the thermodynamic spacetime framework of Jacobson (1995) when entanglement sharing between Rindler and Hubble horizons modifies the effective inertia of matter. The sharing function $f(a) = a/(a + a_0)$ with $a_0(z) = cH(z)/6$, derived in [29] from entanglement monogamy and validated against the SPARC radial acceleration relation at $\sigma = 0.133$ dex [30], produces the standard MOND phenomenology with zero free parameters. Because $H(z)$ is much larger at early times --- $a_0(z{=}12) \approx 26\,a_0(z{=}0)$ --- the modification extends to all protogalactic scales. Gravitational accelerations in collapsing clouds ($g \sim 10^{-12}$ m/s$^2$) fall 3 orders of magnitude below $a_0(z)$, placing them deeply in the modified regime where effective acceleration is enhanced by factors of $\sim$20--40. The resulting collapse timescales are $\sim$65--186 Myr, compared to $>$300 Myr in the standard framework, and 3--4 collapse generations fit within the available cosmic time at every observed redshift. No dark matter, no modified star formation efficiency, and no new free parameters are required.
+The James Webb Space Telescope has revealed galaxies with stellar masses of 10⁹--10¹⁰ M☉ at redshifts z > 10, within 400 Myr of the Big Bang. In standard ΛCDM cosmology, the free-fall timescale of protogalactic baryonic clouds at these epochs exceeds the age of the universe, and the required dark matter halos represent >10σ fluctuations in the primordial density field. We show that these galaxies form naturally --- with no free parameters --- in the thermodynamic spacetime framework of Jacobson (1995) when entanglement sharing between Rindler and Hubble horizons modifies the effective inertia of matter. The sharing function f(a) = a/(a + a₀) with a₀(z) = cH(z)/6, derived in [29] from entanglement monogamy and validated against the SPARC radial acceleration relation at σ = 0.133 dex [30], produces the standard MOND phenomenology with zero free parameters. Because H(z) is much larger at early times --- a₀(z=12) ≈ 26a₀(z=0) --- the modification extends to all protogalactic scales. Gravitational accelerations in collapsing clouds (g ~ 10⁻¹² m/s²) fall 3 orders of magnitude below a₀(z), placing them deeply in the modified regime where effective acceleration is enhanced by factors of ~20--40. The resulting collapse timescales are ~65--186 Myr, compared to >300 Myr in the standard framework, and 3--4 collapse generations fit within the available cosmic time at every observed redshift. No dark matter, no modified star formation efficiency, and no new free parameters are required.
 
 ---
 
@@ -14,35 +14,35 @@ The James Webb Space Telescope has revealed galaxies with stellar masses of $10^
 
 ### 1.1 The Anomaly
 
-The first deep-field observations from JWST revealed a population of galaxy candidates at $z > 10$ that are far too massive and morphologically mature to exist under the standard $\Lambda$CDM structure formation timeline [1--4]. Spectroscopic confirmation campaigns have since established galaxies at $z = 10.6$ [5], $z = 11.4$ [6], $z = 13.2$ [7], $z = 13.5$ [31], and $z = 14.2$ [8], with stellar masses ranging from $10^{7.8}$ to $10^{10}\,M_\odot$. The confirmed population continues to grow: the JADES Data Release 4 [43] and BEACON Cycle 2 surveys now provide large statistical samples at $z = 7$--14.
+The first deep-field observations from JWST revealed a population of galaxy candidates at z > 10 that are far too massive and morphologically mature to exist under the standard ΛCDM structure formation timeline [1--4]. Spectroscopic confirmation campaigns have since established galaxies at z = 10.6 [5], z = 11.4 [6], z = 13.2 [7], z = 13.5 [31], and z = 14.2 [8], with stellar masses ranging from 10⁷·⁸ to 10¹⁰ M☉. The confirmed population continues to grow: the JADES Data Release 4 [43] and BEACON Cycle 2 surveys now provide large statistical samples at z = 7--14.
 
-Boylan-Kolchin [9] quantified the tension: even assuming 100\% star formation efficiency (a physical impossibility --- it requires converting every available baryon into stars with no gas ejection, no remaining gas, and no feedback losses), several JWST candidates exceed the maximum stellar mass permitted by the $\Lambda$CDM halo mass function at their observed redshifts. The implied number densities of massive galaxies at $z > 10$ exceed $\Lambda$CDM predictions by factors of $\sim$3--100 [10--12]. McCaffrey et al. [32] have shown that even state-of-the-art simulations with optimistic assumptions are pushed to their limits by the $z > 10$ population.
+Boylan-Kolchin [9] quantified the tension: even assuming 100% star formation efficiency (a physical impossibility --- it requires converting every available baryon into stars with no gas ejection, no remaining gas, and no feedback losses), several JWST candidates exceed the maximum stellar mass permitted by the ΛCDM halo mass function at their observed redshifts. The implied number densities of massive galaxies at z > 10 exceed ΛCDM predictions by factors of ~3--100 [10--12]. McCaffrey et al. [32] have shown that even state-of-the-art simulations with optimistic assumptions are pushed to their limits by the z > 10 population.
 
-Subsequent work has reduced the most extreme mass estimates through identification of AGN contamination [13], bursty star formation histories [14,15], nebular emission corrections [16], and systematic effects from outshining, dust, and star formation history assumptions [39]. These revisions lower individual stellar masses by factors of 3--10 but do not eliminate the population-level tension: the UV luminosity function at $z > 12$ remains systematically above $\Lambda$CDM predictions [10,17,33,34], and the spectroscopically confirmed population continues to grow. Pollock et al. [35] find evidence for highly efficient star formation driven by dense, neutral gas in UV-bright galaxies at $z > 9$, confirming that the anomaly persists at the population level.
+Subsequent work has reduced the most extreme mass estimates through identification of AGN contamination [13], bursty star formation histories [14,15], nebular emission corrections [16], and systematic effects from outshining, dust, and star formation history assumptions [39]. These revisions lower individual stellar masses by factors of 3--10 but do not eliminate the population-level tension: the UV luminosity function at z > 12 remains systematically above ΛCDM predictions [10,17,33,34], and the spectroscopically confirmed population continues to grow. Pollock et al. [35] find evidence for highly efficient star formation driven by dense, neutral gas in UV-bright galaxies at z > 9, confirming that the anomaly persists at the population level.
 
 ### 1.2 The Timescale Problem
 
-The anomaly is most sharply stated as a timescale problem. At $z = 12$, the age of the universe is 366 Myr. The first stars form after $z \sim 30$ ($t \sim 99$ Myr), leaving approximately 267 Myr for galaxy assembly. In $\Lambda$CDM, the standard free-fall time for a protogalactic baryonic cloud at 5$\times$ the mean density is:
+The anomaly is most sharply stated as a timescale problem. At z = 12, the age of the universe is 366 Myr. The first stars form after z ~ 30 (t ~ 99 Myr), leaving approximately 267 Myr for galaxy assembly. In ΛCDM, the standard free-fall time for a protogalactic baryonic cloud at 5× the mean density is:
 
 ```math
 t_{\rm ff} = \sqrt{\frac{3\pi}{32\,G\,\rho}} \approx 300\text{--}400\ {\rm Myr} \qquad (z \sim 12)
 ```
 
-This exceeds the available cosmic time. Even a single gravitational collapse cannot be completed, let alone the multiple generations of collapse, star formation, and feedback required to build a galaxy with $M_\star \sim 10^9\,M_\odot$.
+This exceeds the available cosmic time. Even a single gravitational collapse cannot be completed, let alone the multiple generations of collapse, star formation, and feedback required to build a galaxy with M★ ~ 10⁹ M☉.
 
-In the standard hierarchical picture, the additional bottleneck is the rarity of sufficiently massive dark matter halos. A halo of $10^{11}\,M_\odot$ at $z = 12$ corresponds to a $\sim$9$\sigma$ fluctuation in the primordial density field, with an expected number density of effectively zero in the observable universe.
+In the standard hierarchical picture, the additional bottleneck is the rarity of sufficiently massive dark matter halos. A halo of 10¹¹ M☉ at z = 12 corresponds to a ~9σ fluctuation in the primordial density field, with an expected number density of effectively zero in the observable universe.
 
 ### 1.3 Existing Proposals
 
 Several mechanisms have been proposed to alleviate the tension within or near the standard framework:
 
-- **Enhanced star formation efficiency** at high $z$, including "feedback-free starbursts" (FFB) in which gas converts to stars before feedback can regulate the process [18]. Dekel et al. have since extended the FFB framework to explain Little Red Dots via compaction. Kar et al. [37] propose an evolving star formation efficiency as the key mechanism, while Munoz et al. [38] find empirical evidence for increased burstiness in smaller halos at cosmic dawn. These proposals address the mass budget and luminosity function but not the fundamental timescale problem at $z > 12$.
+- **Enhanced star formation efficiency** at high z, including "feedback-free starbursts" (FFB) in which gas converts to stars before feedback can regulate the process [18]. Dekel et al. have since extended the FFB framework to explain Little Red Dots via compaction. Kar et al. [37] propose an evolving star formation efficiency as the key mechanism, while Munoz et al. [38] find empirical evidence for increased burstiness in smaller halos at cosmic dawn. These proposals address the mass budget and luminosity function but not the fundamental timescale problem at z > 12.
 
-- **Revised mass estimates.** Ziegler et al. [39] argue that three effects --- outshining by young stars, assumed star formation histories, and dust attenuation --- can each reduce inferred stellar masses by factors of a few, potentially reducing the tension. Cheng et al. [40] show that a bottom-heavy initial mass function would imply *more* hidden mass in early galaxies, worsening the tension. Dressler & Benson [36] claim good agreement between semi-analytic models and stellar mass data at $z = 6$--12, though their analysis focuses on luminosity-selected samples rather than the most extreme objects.
+- **Revised mass estimates.** Ziegler et al. [39] argue that three effects --- outshining by young stars, assumed star formation histories, and dust attenuation --- can each reduce inferred stellar masses by factors of a few, potentially reducing the tension. Cheng et al. [40] show that a bottom-heavy initial mass function would imply *more* hidden mass in early galaxies, worsening the tension. Dressler & Benson [36] claim good agreement between semi-analytic models and stellar mass data at z = 6--12, though their analysis focuses on luminosity-selected samples rather than the most extreme objects.
 
-- **Modified cosmological backgrounds.** Early dark energy models can boost the high-$z$ halo mass function [19], and Shen et al. [41] show that departures from $\Lambda$CDM prior to recombination can accelerate structure formation. These approaches require new physics in the dark energy or inflation sector and introduce additional parameters.
+- **Modified cosmological backgrounds.** Early dark energy models can boost the high-z halo mass function [19], and Shen et al. [41] show that departures from ΛCDM prior to recombination can accelerate structure formation. These approaches require new physics in the dark energy or inflation sector and introduce additional parameters.
 
-- **MOND/Milgromian cosmology**: Haslbauer et al. [20] showed that MOND predicts more massive galaxies at early times than $\Lambda$CDM, because the enhanced effective gravity accelerates structure formation. However, MOND's critical acceleration $a_0 = 1.2 \times 10^{-10}$ m/s$^2$ is an empirical constant with no first-principles derivation. Its extension to cosmological settings requires additional assumptions about its redshift dependence. Moffat [42] has applied Modified Gravity (MOG) to the same problem, but MOG introduces additional fields and parameters.
+- **MOND/Milgromian cosmology**: Haslbauer et al. [20] showed that MOND predicts more massive galaxies at early times than ΛCDM, because the enhanced effective gravity accelerates structure formation. However, MOND's critical acceleration a₀ = 1.2 × 10⁻¹⁰ m/s² is an empirical constant with no first-principles derivation. Its extension to cosmological settings requires additional assumptions about its redshift dependence. Moffat [42] has applied Modified Gravity (MOG) to the same problem, but MOG introduces additional fields and parameters.
 
 ### 1.4 This Work
 
@@ -52,11 +52,11 @@ We show that the JWST anomaly is resolved naturally by the thermodynamic spaceti
 a_0(z) = \frac{c\,H(z)}{6} \qquad \text{(1)}
 ```
 
-from Jacobson's thermodynamic derivation of Einstein's equations [21], with no free parameters. The factor of 6 is a geometric constant arising from the backward-hemisphere $\cos^2\theta$ integral over the overlap between planar Rindler and spherical Hubble entanglement modes [30]. The critical acceleration $a_0$ is not inserted by hand (as in MOND) but emerges from the geometry: it is set by the competition between two horizons for vacuum entanglement.
+from Jacobson's thermodynamic derivation of Einstein's equations [21], with no free parameters. The factor of 6 is a geometric constant arising from the backward-hemisphere cos²θ integral over the overlap between planar Rindler and spherical Hubble entanglement modes [30]. The critical acceleration a₀ is not inserted by hand (as in MOND) but emerges from the geometry: it is set by the competition between two horizons for vacuum entanglement.
 
-At $z = 0$, $a_0 = cH_0/6 \approx 1.09 \times 10^{-10}$ m/s$^2$, within 9\% of Milgrom's empirical value $a_0^{\rm MOND} = 1.2 \times 10^{-10}$ m/s$^2$. This agreement --- achieved with zero free parameters --- is validated by the SPARC rotation curve analysis in [30], which matches the observed radial acceleration relation at $\sigma = 0.133$ dex scatter.
+At z = 0, a₀ = cH₀/6 ≈ 1.09 × 10⁻¹⁰ m/s², within 9% of Milgrom's empirical value a₀(MOND) = 1.2 × 10⁻¹⁰ m/s². This agreement --- achieved with zero free parameters --- is validated by the SPARC rotation curve analysis in [30], which matches the observed radial acceleration relation at σ = 0.133 dex scatter.
 
-Because $H(z)$ was much larger in the early universe --- $H(z{=}12)/H_0 \approx 26$ --- the inertia modification extends to much higher accelerations at early times. All protogalactic dynamics at $z > 10$ fall deeply within the modified regime, and gravitational collapse proceeds on timescales of $\sim$65--100 Myr rather than hundreds of Myr. The "impossible" early massive galaxies are impossible only under the assumption that inertia is constant.
+Because H(z) was much larger in the early universe --- H(z=12)/H₀ ≈ 26 --- the inertia modification extends to much higher accelerations at early times. All protogalactic dynamics at z > 10 fall deeply within the modified regime, and gravitational collapse proceeds on timescales of ~65--100 Myr rather than hundreds of Myr. The "impossible" early massive galaxies are impossible only under the assumption that inertia is constant.
 
 ---
 
@@ -66,14 +66,14 @@ We summarize the relevant results from [29,30]; the reader is referred there for
 
 ### 2.1 Jacobson's Thermodynamic Spacetime
 
-Jacobson [21] showed that Einstein's field equations emerge from the first law of thermodynamics ($\delta Q = T\,dS$) applied to local Rindler horizons, provided the entropy satisfies the Bekenstein-Hawking area law $S = k_B A / (4\ell_P^2)$. This derivation assumes local equilibrium: that every horizon patch has the full entropy, with all vacuum modes contributing.
+Jacobson [21] showed that Einstein's field equations emerge from the first law of thermodynamics (δQ = TdS) applied to local Rindler horizons, provided the entropy satisfies the Bekenstein-Hawking area law S = k_B A / (4ℓ_P²). This derivation assumes local equilibrium: that every horizon patch has the full entropy, with all vacuum modes contributing.
 
 ### 2.2 Entanglement Sharing Between Horizons
 
-In Jacobson's original derivation, the Rindler horizon entropy is computed as if the horizon has sole access to all vacuum entanglement. In reality, any observer with acceleration $a$ in a universe with Hubble parameter $H$ has *two* horizons competing for the same vacuum modes:
+In Jacobson's original derivation, the Rindler horizon entropy is computed as if the horizon has sole access to all vacuum entanglement. In reality, any observer with acceleration a in a universe with Hubble parameter H has *two* horizons competing for the same vacuum modes:
 
-- The **Rindler horizon** at distance $d_R = c^2/a$, producing the Unruh temperature $T_R = \hbar a / (2\pi c k_B)$.
-- The **Hubble horizon** at distance $R_H = c/H$, producing the Gibbons-Hawking temperature $T_H = \hbar c H / (2\pi k_B)$.
+- The **Rindler horizon** at distance d_R = c²/a, producing the Unruh temperature T_R = ℏ a / (2π c k_B).
+- The **Hubble horizon** at distance R_H = c/H, producing the Gibbons-Hawking temperature T_H = ℏ c H / (2π k_B).
 
 By entanglement monogamy, both horizons cannot be fully entangled with the same mode. The effective entanglement available to the Rindler horizon is reduced by a sharing fraction [29]:
 
@@ -81,7 +81,7 @@ By entanglement monogamy, both horizons cannot be fully entangled with the same 
 f(a) = \frac{T_R}{T_R + T_{H,\rm eff}} = \frac{a}{a + a_0} \qquad \text{(2)}
 ```
 
-where $T_{H,\rm eff} = T_H / 6$ is the effective Hubble temperature at the Rindler horizon, reduced by a geometric factor of 6 from the backward-hemisphere $\cos^2\theta$ integral over the overlap between planar (Rindler) and spherical (Hubble) entanglement modes [30]. This gives:
+where T_H,eff = T_H / 6 is the effective Hubble temperature at the Rindler horizon, reduced by a geometric factor of 6 from the backward-hemisphere cos²θ integral over the overlap between planar (Rindler) and spherical (Hubble) entanglement modes [30]. This gives:
 
 ```math
 a_0 \equiv \frac{cH}{6} \qquad \text{(3)}
@@ -89,24 +89,24 @@ a_0 \equiv \frac{cH}{6} \qquad \text{(3)}
 
 ### 2.3 The Modified Equation of Motion
 
-The sharing function $f(a)$ enters Jacobson's Clausius relation as $\delta Q = T_R\,f(a)\,dS$, yielding an effective inertial mass $m_i = f(a)\,m_g$. The equation of motion $F = m_i\,a$ with gravitational force $F = m_g\,g$ gives:
+The sharing function f(a) enters Jacobson's Clausius relation as δQ = T_R·f(a)·dS, yielding an effective inertial mass m_i = f(a)·m_g. The equation of motion F = m_i·a with gravitational force F = m_g·g gives:
 
 ```math
 g = f(a)\,a = \frac{a^2}{a + a_0} \qquad \text{(4)}
 ```
 
-Solving for $a$:
+Solving for a:
 
 ```math
 a = \frac{g + \sqrt{g^2 + 4\,g\,a_0}}{2} \qquad \text{(5)}
 ```
 
 This has the correct limits:
-- **High acceleration** ($g \gg a_0$): $a \to g$ (standard Newtonian dynamics)
-- **Low acceleration** ($g \ll a_0$): $a \to \sqrt{g\,a_0}$ (deep-MOND regime)
-- **Transition** at $g \sim a_0 = cH/6$
+- **High acceleration** (g ≫ a₀): a → g (standard Newtonian dynamics)
+- **Low acceleration** (g ≪ a₀): a → √(g·a₀) (deep-MOND regime)
+- **Transition** at g ~ a₀ = cH/6
 
-The deep-MOND limit $a = \sqrt{g\,a_0}$ is the same scaling that produces flat rotation curves [30]. At $z = 0$, the SPARC radial acceleration relation $g_{\rm bar} = g_{\rm obs}^2/(g_{\rm obs} + a_0)$ matches 175 galaxies at $\sigma = 0.133$ dex with zero free parameters.
+The deep-MOND limit a = √(g·a₀) is the same scaling that produces flat rotation curves [30]. At z = 0, the SPARC radial acceleration relation g_bar = g_obs²/(g_obs + a₀) matches 175 galaxies at σ = 0.133 dex with zero free parameters.
 
 ### 2.4 Cosmological Evolution
 
@@ -116,7 +116,7 @@ The Hubble parameter evolves as:
 H(z) = H_0\sqrt{\Omega_m(1+z)^3 + \Omega_r(1+z)^4 + \Omega_\Lambda} \qquad \text{(6)}
 ```
 
-Therefore $a_0(z) = cH(z)/6$ increases with redshift. Using Planck 2018 parameters ($H_0 = 67.4$ km/s/Mpc, $\Omega_m = 0.315$, $\Omega_r = 9.1 \times 10^{-5}$, $\Omega_\Lambda = 0.685$):
+Therefore a₀(z) = cH(z)/6 increases with redshift. Using Planck 2018 parameters (H₀ = 67.4 km/s/Mpc, Ω_m = 0.315, Ω_r = 9.1 × 10⁻⁵, Ω_Λ = 0.685):
 
 | z | H(z)/H₀ | a₀(z) [m/s²] | Enhancement |
 |----:|:----------:|:-------------------:|:-----------:|
@@ -127,11 +127,11 @@ Therefore $a_0(z) = cH(z)/6$ increases with redshift. Using Planck 2018 paramete
 | 14 | 32.7 | 3.57 × 10⁻⁹ | 33× |
 | 20 | 54.2 | 5.91 × 10⁻⁹ | 54× |
 
-**Table 1.** Critical acceleration $a_0(z) = cH(z)/6$ at key redshifts. The enhancement ratio is the same as in v1 because both $a_0$ and $a_0(z{=}0)$ share the factor of 1/6.
+**Table 1.** Critical acceleration a₀(z) = cH(z)/6 at key redshifts. The enhancement ratio is the same as in v1 because both a₀ and a₀(z=0) share the factor of 1/6.
 
-A critical consequence: at $z = 0$, the modification only affects the outermost regions of galaxies where $g < 1.09 \times 10^{-10}$ m/s$^2$. At $z = 12$, it affects all regions where $g < 2.88 \times 10^{-9}$ m/s$^2$ --- encompassing the entirety of protogalactic collapse dynamics.
+A critical consequence: at z = 0, the modification only affects the outermost regions of galaxies where g < 1.09 × 10⁻¹⁰ m/s². At z = 12, it affects all regions where g < 2.88 × 10⁻⁹ m/s² --- encompassing the entirety of protogalactic collapse dynamics.
 
-We emphasize that the Friedmann equation governing the background expansion is unchanged. The modification applies to the inertial response of test masses to gravitational forces, not to the relation between stress-energy and spacetime geometry. The cosmic timeline remains standard: $t(z{=}12) = 366$ Myr.
+We emphasize that the Friedmann equation governing the background expansion is unchanged. The modification applies to the inertial response of test masses to gravitational forces, not to the relation between stress-energy and spacetime geometry. The cosmic timeline remains standard: t(z=12) = 366 Myr.
 
 ---
 
@@ -139,7 +139,7 @@ We emphasize that the Friedmann equation governing the background expansion is u
 
 ### 3.1 Protogalactic Dynamics in the Modified Regime
 
-Consider a protogalactic baryonic cloud of mass $M_b$ at redshift $z$, with density $\rho = \delta \times \rho_{\rm mean}(z)$ at turnaround ($\delta \sim 5$). The cloud radius is:
+Consider a protogalactic baryonic cloud of mass M_b at redshift z, with density ρ = δ × ρ_mean(z) at turnaround (δ ~ 5). The cloud radius is:
 
 ```math
 R = \left(\frac{3\,M_b}{4\pi\,\rho}\right)^{1/3} \qquad \text{(7)}
@@ -151,7 +151,7 @@ and the Newtonian gravitational acceleration at the cloud edge is:
 g = \frac{G\,M_b}{R^2} \qquad \text{(8)}
 ```
 
-For the JWST galaxies, we take the observed stellar mass $M_\star$, assume a star formation efficiency of 10\%, and compute the progenitor cloud mass $M_b = M_\star / 0.1$. The results are shown in Table 2.
+For the JWST galaxies, we take the observed stellar mass M★, assume a star formation efficiency of 10%, and compute the progenitor cloud mass M_b = M★ / 0.1. The results are shown in Table 2.
 
 | Galaxy | z | log M★ | g [m/s²] | a₀(z) [m/s²] | g/a₀ |
 |--------|----:|:-----:|:-----------:|:-------------------:|:-------:|
@@ -164,9 +164,9 @@ For the JWST galaxies, we take the observed stellar mass $M_\star$, assume a sta
 | CEERS-2 | 7.9 | 9.8 | 3.9 × 10⁻¹² | 1.6 × 10⁻⁹ | 2.4 × 10⁻³ |
 | CEERS-3 | 7.5 | 10.0 | 4.1 × 10⁻¹² | 1.5 × 10⁻⁹ | 2.7 × 10⁻³ |
 
-**Table 2.** Gravitational accelerations in progenitor clouds of observed JWST galaxies. In all cases $g/a_0 \sim 10^{-3}$: every object is deeply in the modified regime.
+**Table 2.** Gravitational accelerations in progenitor clouds of observed JWST galaxies. In all cases g/a₀ ~ 10⁻³: every object is deeply in the modified regime.
 
-The ratio $g/a_0 \sim 10^{-3}$ across all objects means we are firmly in the deep-MOND limit where $g \ll a_0$, and the self-consistent acceleration (Eq. 5) is approximately $a \approx \sqrt{g\,a_0(z)}$. The enhancement factor is:
+The ratio g/a₀ ~ 10⁻³ across all objects means we are firmly in the deep-MOND limit where g ≪ a₀, and the self-consistent acceleration (Eq. 5) is approximately a ≈ √(g·a₀)(z). The enhancement factor is:
 
 ```math
 \eta \equiv \frac{a}{g} \approx \sqrt{\frac{a_0(z)}{g}} \sim 20\text{--}40 \qquad \text{(9)}
@@ -174,27 +174,27 @@ The ratio $g/a_0 \sim 10^{-3}$ across all objects means we are firmly in the dee
 
 ### 3.2 Modified Collapse Timescale
 
-The standard free-fall time for a uniform sphere of density $\rho$ is:
+The standard free-fall time for a uniform sphere of density ρ is:
 
 ```math
 t_{\rm ff} = \sqrt{\frac{3\pi}{32\,G\,\rho}} \qquad \text{(10)}
 ```
 
-In the modified regime, the effective acceleration is enhanced by factor $\eta$. The collapse timescale can be estimated by two methods that bracket the true value:
+In the modified regime, the effective acceleration is enhanced by factor η. The collapse timescale can be estimated by two methods that bracket the true value:
 
-**Lower bound** ($\sqrt{\eta}$ scaling): The free-fall time scales inversely with the square root of the effective acceleration:
+**Lower bound** (√η scaling): The free-fall time scales inversely with the square root of the effective acceleration:
 
 ```math
 t_{\rm lower} = \frac{t_{\rm ff}}{\sqrt{\eta}} \qquad \text{(11)}
 ```
 
-**Upper bound** (constant-acceleration approximation): In the deep-MOND limit, the effective acceleration $a \approx \sqrt{g\,a_0}$ is approximately constant during the early phase of collapse (before the cloud has contracted significantly). This gives:
+**Upper bound** (constant-acceleration approximation): In the deep-MOND limit, the effective acceleration a ≈ √(g·a₀) is approximately constant during the early phase of collapse (before the cloud has contracted significantly). This gives:
 
 ```math
 t_{\rm upper} = \sqrt{\frac{2R}{a_{\rm mod}}} \qquad \text{(12)}
 ```
 
-We adopt the geometric mean $t_{\rm mod} = \sqrt{t_{\rm lower} \times t_{\rm upper}}$ as our estimate. The results are shown in Table 3.
+We adopt the geometric mean t_mod = √t_lower × t_upper as our estimate. The results are shown in Table 3.
 
 | Galaxy | z | t_avail [Myr] | t_ff (standard) [Myr] | η | t_mod (modified) [Myr] | N_collapse |
 |--------|----:|:------:|:----:|:---:|:----:|:---:|
@@ -207,23 +207,23 @@ We adopt the geometric mean $t_{\rm mod} = \sqrt{t_{\rm lower} \times t_{\rm upp
 | CEERS-2 | 7.9 | 548 | 684 | 21.0 | **168** | 3.3 |
 | CEERS-3 | 7.5 | 594 | 733 | 19.7 | **186** | 3.2 |
 
-**Table 3.** Collapse timescales for JWST galaxies. $t_{\rm avail}$ is the time from first star formation ($z = 30$) to the observed redshift. $\eta = a_{\rm mod}/g$ is the acceleration enhancement. $N_{\rm collapse} = t_{\rm avail} / t_{\rm mod}$ is the number of collapse generations that fit within the available time. In the standard framework, not even one free-fall can be completed ($t_{\rm ff} > t_{\rm avail}$ for $z \gtrsim 10$). In the modified framework, 3--4 collapse generations are available for every object.
+**Table 3.** Collapse timescales for JWST galaxies. t_avail is the time from first star formation (z = 30) to the observed redshift. η = a_mod/g is the acceleration enhancement. N_collapse = t_avail / t_mod is the number of collapse generations that fit within the available time. In the standard framework, not even one free-fall can be completed (t_ff > t_avail for z ≳ 10). In the modified framework, 3--4 collapse generations are available for every object.
 
 ### 3.3 Formation Feasibility
 
-For JADES-GS-z14-0, the most distant spectroscopically confirmed galaxy ($z = 14.2$, $M_\star \sim 10^{8.7}\,M_\odot$) [8]:
+For JADES-GS-z14-0, the most distant spectroscopically confirmed galaxy (z = 14.2, M★ ~ 10⁸·⁷ M☉) [8]:
 
-- **Standard**: $t_{\rm ff} = 306$ Myr exceeds the available time of 190 Myr. The galaxy *cannot complete a single gravitational collapse*. Formation is impossible.
+- **Standard**: t_ff = 306 Myr exceeds the available time of 190 Myr. The galaxy *cannot complete a single gravitational collapse*. Formation is impossible.
 
-- **Modified**: $t_{\rm mod} = 65$ Myr. There are 2.9 collapse timescales available. At 10\% star formation efficiency per collapse, the galaxy can build $M_\star \sim 10^{8.7}\,M_\odot$ in 2--3 generations --- within the budget.
+- **Modified**: t_mod = 65 Myr. There are 2.9 collapse timescales available. At 10% star formation efficiency per collapse, the galaxy can build M★ ~ 10⁸·⁷ M☉ in 2--3 generations --- within the budget.
 
-The result holds for every object in the sample. The standard framework cannot form these galaxies; the modified framework provides sufficient time with margins of $\times$3--4.
+The result holds for every object in the sample. The standard framework cannot form these galaxies; the modified framework provides sufficient time with margins of ×3--4.
 
-We note that the margins are tighter than a naive estimate might suggest, which is itself a feature of the framework: the modification is calibrated to reproduce observed rotation curves at $z = 0$ with zero free parameters, leaving no room to inflate the effect. The fact that JWST galaxies are resolved *without* parameter tuning --- neither too easily nor too tightly --- is a non-trivial consistency check.
+We note that the margins are tighter than a naive estimate might suggest, which is itself a feature of the framework: the modification is calibrated to reproduce observed rotation curves at z = 0 with zero free parameters, leaving no room to inflate the effect. The fact that JWST galaxies are resolved *without* parameter tuning --- neither too easily nor too tightly --- is a non-trivial consistency check.
 
 ### 3.4 No Dark Matter Required
 
-A further consequence of modified inertia is the elimination of the dark matter halo bottleneck. In $\Lambda$CDM, baryons collapse only after dark matter halos have formed through hierarchical merging. The abundance of halos is exponentially sensitive to the peak height $\nu = \delta_c / (\sigma(M) \cdot D(z))$, which reaches $\nu \sim 9$--12 at $z > 12$ for the required halo masses. At $\nu = 12$, the probability is $\sim e^{-72} \sim 10^{-31}$ --- effectively zero.
+A further consequence of modified inertia is the elimination of the dark matter halo bottleneck. In ΛCDM, baryons collapse only after dark matter halos have formed through hierarchical merging. The abundance of halos is exponentially sensitive to the peak height ν = δ_c / (σ(M) · D(z)), which reaches ν ~ 9--12 at z > 12 for the required halo masses. At ν = 12, the probability is ~ e⁻⁷² ~ 10⁻³¹ --- effectively zero.
 
 In the modified inertia framework, dark matter is unnecessary: flat rotation curves arise from the entanglement sharing function itself [29,30]. Baryonic gas collapses directly under its own gravity, enhanced by the reduced inertia. The exponential suppression from the halo mass function is absent, and the relevant question is simply whether the baryonic gas can collapse within the available time. As shown above, it can.
 
@@ -233,11 +233,11 @@ In the modified inertia framework, dark matter is unnecessary: flat rotation cur
 
 ### 4.1 Comparison with MOND
 
-Haslbauer et al. [20] demonstrated that Milgromian dynamics predicts a higher abundance of massive galaxies at early times than $\Lambda$CDM, qualitatively consistent with JWST observations. Our result is in the same spirit but differs in three important respects:
+Haslbauer et al. [20] demonstrated that Milgromian dynamics predicts a higher abundance of massive galaxies at early times than ΛCDM, qualitatively consistent with JWST observations. Our result is in the same spirit but differs in three important respects:
 
-1. **Derived, not empirical.** MOND introduces $a_0 = 1.2 \times 10^{-10}$ m/s$^2$ as an empirical constant. In our framework, $a_0 = cH/6$ emerges from Jacobson's thermodynamic spacetime [21] with entanglement sharing between Rindler and Hubble horizons [29,30] --- no free parameters. The predicted $a_0 = 1.09 \times 10^{-10}$ m/s$^2$ matches Milgrom's value to 9\%.
+1. **Derived, not empirical.** MOND introduces a₀ = 1.2 × 10⁻¹⁰ m/s² as an empirical constant. In our framework, a₀ = cH/6 emerges from Jacobson's thermodynamic spacetime [21] with entanglement sharing between Rindler and Hubble horizons [29,30] --- no free parameters. The predicted a₀ = 1.09 × 10⁻¹⁰ m/s² matches Milgrom's value to 9%.
 
-2. **Redshift dependence is built in.** MOND does not specify how $a_0$ evolves with cosmic time; any $z$-dependence must be added by assumption. Our $a_0(z) = cH(z)/6$ follows directly from the physics: the Hubble horizon shrinks at early times, intensifying the entanglement competition and producing a larger inertia modification.
+2. **Redshift dependence is built in.** MOND does not specify how a₀ evolves with cosmic time; any z-dependence must be added by assumption. Our a₀(z) = cH(z)/6 follows directly from the physics: the Hubble horizon shrinks at early times, intensifying the entanglement competition and producing a larger inertia modification.
 
 3. **Modified inertia, not modified gravity.** MOND modifies the gravitational force law; Moffat's MOG [42] introduces additional gravitational fields. We modify the inertial response of matter via the entropy sharing mechanism. These are observationally distinguishable [24] and represent different physics. In our framework, the gravitational field equations (Einstein's equations) are unchanged; only the relationship between force and acceleration is modified through the entropy correction.
 
@@ -245,17 +245,17 @@ Haslbauer et al. [20] demonstrated that Milgromian dynamics predicts a higher ab
 
 A growing literature seeks to resolve the JWST tension within or near the standard framework. The approaches fall into three categories:
 
-**Astrophysical adjustments.** Enhanced star formation efficiency [18,37], bursty star formation histories [14,15,38], and AGN contamination corrections [13] address the mass and luminosity estimates of individual objects. Dressler & Benson [36] argue that semi-analytic models can match stellar mass growth at $z = 6$--12 without new physics. These approaches can reduce the inferred severity of the anomaly but do not address the fundamental timescale problem: at $z > 12$, the standard free-fall time exceeds the age of the universe regardless of how efficiently stars form once collapse occurs.
+**Astrophysical adjustments.** Enhanced star formation efficiency [18,37], bursty star formation histories [14,15,38], and AGN contamination corrections [13] address the mass and luminosity estimates of individual objects. Dressler & Benson [36] argue that semi-analytic models can match stellar mass growth at z = 6--12 without new physics. These approaches can reduce the inferred severity of the anomaly but do not address the fundamental timescale problem: at z > 12, the standard free-fall time exceeds the age of the universe regardless of how efficiently stars form once collapse occurs.
 
-**Systematic reductions.** Ziegler et al. [39] show that outshining, star formation history assumptions, and dust can each reduce inferred masses by factors of a few, and argue the tension may be less severe than claimed. However, the population-level excess in the UV luminosity function at $z > 12$ [33,34] persists independently of individual mass estimates, and McCaffrey et al. [32] demonstrate that even optimistic simulations struggle to reproduce the observed abundance.
+**Systematic reductions.** Ziegler et al. [39] show that outshining, star formation history assumptions, and dust can each reduce inferred masses by factors of a few, and argue the tension may be less severe than claimed. However, the population-level excess in the UV luminosity function at z > 12 [33,34] persists independently of individual mass estimates, and McCaffrey et al. [32] demonstrate that even optimistic simulations struggle to reproduce the observed abundance.
 
-**Modified cosmology.** Shen et al. [41] explore departures from $\Lambda$CDM before recombination that imprint on non-linear structure formation, showing that modified early-universe physics can speed galaxy assembly. This is closest in spirit to our approach, though it operates through the dark energy sector rather than through inertia.
+**Modified cosmology.** Shen et al. [41] explore departures from ΛCDM before recombination that imprint on non-linear structure formation, showing that modified early-universe physics can speed galaxy assembly. This is closest in spirit to our approach, though it operates through the dark energy sector rather than through inertia.
 
-Our framework resolves the timescale problem directly. Collapse occurs in $\sim$65--100 Myr at $z > 12$, and 3--4 collapse-and-formation cycles fit within the available time. Even modest star formation efficiencies ($\sim$10\%) produce the observed stellar masses across multiple generations. Crucially, the same physics that accelerates high-$z$ collapse also produces the correct rotation curves at $z = 0$ [30] --- the two regimes are linked by a single, parameter-free function.
+Our framework resolves the timescale problem directly. Collapse occurs in ~65--100 Myr at z > 12, and 3--4 collapse-and-formation cycles fit within the available time. Even modest star formation efficiencies (~10%) produce the observed stellar masses across multiple generations. Crucially, the same physics that accelerates high-z collapse also produces the correct rotation curves at z = 0 [30] --- the two regimes are linked by a single, parameter-free function.
 
 ### 4.3 CMB Compatibility
 
-The modification to inertia is also active at recombination ($z \sim 1100$), where $a_0(z) \sim 3 \times 10^{-6}$ m/s$^2$ and the gravitational accelerations in CMB-scale perturbations ($g \sim 10^{-12}$ m/s$^2$) are far below $a_0$. This raises the question of whether the modification is compatible with the observed CMB power spectrum.
+The modification to inertia is also active at recombination (z ~ 1100), where a₀(z) ~ 3 × 10⁻⁶ m/s² and the gravitational accelerations in CMB-scale perturbations (g ~ 10⁻¹² m/s²) are far below a₀. This raises the question of whether the modification is compatible with the observed CMB power spectrum.
 
 We note that the modification derived in [29] applies specifically to the inertial response of matter to gravitational forces, not to electromagnetic interactions. The baryon acoustic oscillations that produce the CMB peaks are driven by radiation pressure (an electromagnetic effect), with gravity providing the driving potential wells. If the inertia modification applies only to the gravitational sector --- as expected from its origin in Jacobson's gravitational thermodynamics --- the pressure-driven oscillation dynamics may be less affected than a naive estimate would suggest.
 
@@ -265,21 +265,21 @@ A definitive answer requires a numerical calculation with a modified Boltzmann c
 
 The framework makes specific, testable predictions:
 
-1. **Mass--redshift relation.** The maximum stellar mass at each redshift is determined by $a_0(z) = cH(z)/6$ and the available cosmic time. This produces a definite, parameter-free prediction for the envelope of the galaxy population on the mass--redshift plane. Future JWST observations at $z > 15$ should continue to find galaxies above the $\Lambda$CDM limit and below our predicted ceiling.
+1. **Mass--redshift relation.** The maximum stellar mass at each redshift is determined by a₀(z) = cH(z)/6 and the available cosmic time. This produces a definite, parameter-free prediction for the envelope of the galaxy population on the mass--redshift plane. Future JWST observations at z > 15 should continue to find galaxies above the ΛCDM limit and below our predicted ceiling.
 
-2. **Scaling with $H(z)$.** In the deep-MOND limit, the effective acceleration scales as $a \propto \sqrt{g\,a_0(z)} \propto \sqrt{H(z)}$, and the collapse timescale as $t_{\rm mod} \propto 1/H(z)^{1/4}$. The modification is strongest at the highest redshifts and weakens toward low $z$ as $H$ decreases. This naturally explains why the anomaly is most severe at early times and becomes less pronounced at $z < 6$.
+2. **Scaling with H(z).** In the deep-MOND limit, the effective acceleration scales as a ∝ √(g·a₀)(z) ∝ √H(z), and the collapse timescale as t_mod ∝ 1/H(z)^1/4. The modification is strongest at the highest redshifts and weakens toward low z as H decreases. This naturally explains why the anomaly is most severe at early times and becomes less pronounced at z < 6.
 
-3. **No dark matter halos.** In our framework, massive galaxies at high $z$ form from direct baryonic collapse without prior dark matter halo assembly. Observations probing the mass distribution of high-$z$ galaxies (e.g., through gravitational lensing or dynamics) should find baryon-dominated systems, not the dark-matter-dominated halos predicted by $\Lambda$CDM.
+3. **No dark matter halos.** In our framework, massive galaxies at high z form from direct baryonic collapse without prior dark matter halo assembly. Observations probing the mass distribution of high-z galaxies (e.g., through gravitational lensing or dynamics) should find baryon-dominated systems, not the dark-matter-dominated halos predicted by ΛCDM.
 
-4. **Morphological maturity.** The collapse timescale ($\sim$65--100 Myr at $z > 12$) still allows time for dynamical relaxation before the galaxy is observed. This could contribute to the unexpectedly mature morphologies (disks, bulges) seen at $z \sim 6$--8 [27,28], which are puzzling in the standard framework where galaxies at these epochs should still be dynamically young.
+4. **Morphological maturity.** The collapse timescale (~65--100 Myr at z > 12) still allows time for dynamical relaxation before the galaxy is observed. This could contribute to the unexpectedly mature morphologies (disks, bulges) seen at z ~ 6--8 [27,28], which are puzzling in the standard framework where galaxies at these epochs should still be dynamically young.
 
 ---
 
 ## 5. Conclusion
 
-The JWST "impossible early massive galaxies" are impossible only if inertia is constant. In the thermodynamic spacetime framework, entanglement sharing between Rindler and Hubble horizons modifies the effective inertia of matter via the sharing function $f(a) = a/(a + a_0)$ with $a_0(z) = cH(z)/6$. This function, derived from entanglement monogamy [29] and validated against the SPARC radial acceleration relation at $\sigma = 0.133$ dex [30], produces standard MOND phenomenology with zero free parameters and $a_0 = 1.09 \times 10^{-10}$ m/s$^2$ (9\% from Milgrom's empirical value).
+The JWST "impossible early massive galaxies" are impossible only if inertia is constant. In the thermodynamic spacetime framework, entanglement sharing between Rindler and Hubble horizons modifies the effective inertia of matter via the sharing function f(a) = a/(a + a₀) with a₀(z) = cH(z)/6. This function, derived from entanglement monogamy [29] and validated against the SPARC radial acceleration relation at σ = 0.133 dex [30], produces standard MOND phenomenology with zero free parameters and a₀ = 1.09 × 10⁻¹⁰ m/s² (9% from Milgrom's empirical value).
 
-At $z > 10$, $a_0(z)$ is 20--50 times larger than at $z = 0$, placing all protogalactic dynamics deeply in the modified regime. The consequences: gravitational collapse timescales drop from hundreds of Myr to $\sim$65--100 Myr, 3--4 collapse generations become available within the cosmic time budget, and the dark matter halo bottleneck is eliminated entirely. Every spectroscopically confirmed JWST galaxy at $z > 7$ forms within this framework, with no free parameters and no fine-tuning.
+At z > 10, a₀(z) is 20--50 times larger than at z = 0, placing all protogalactic dynamics deeply in the modified regime. The consequences: gravitational collapse timescales drop from hundreds of Myr to ~65--100 Myr, 3--4 collapse generations become available within the cosmic time budget, and the dark matter halo bottleneck is eliminated entirely. Every spectroscopically confirmed JWST galaxy at z > 7 forms within this framework, with no free parameters and no fine-tuning.
 
 The framework inherits the conceptual solidity of Jacobson's thermodynamic derivation of Einstein's equations [21] --- the most cited result in quantum gravity --- extended by the physical requirement that vacuum entanglement be shared between competing horizons. The "anomaly" is not anomalous; it is what horizon thermodynamics predicts.
 
