@@ -22,8 +22,7 @@ Every spectroscopically confirmed JWST galaxy at z > 7 forms within this framewo
 
 ## Files
 
-- `Draft-v2.md` — Full paper text (Markdown, v2)
-- `Draft-v1.md` — Previous version (retained for reference)
+- `Draft-v2.md` — Full paper text (Markdown)
 - `jwst_modified_inertia.py` — Complete numerical analysis script (reproduces all tables and figures)
 - `fig_jwst_analysis.png` — Four-panel summary figure
 
@@ -40,9 +39,7 @@ Requires only `numpy`, `scipy`, and `matplotlib`.
 
 1. **Paper 1:** K. Brodie, "Quantized Inertia as a Boundary Correction to Jacobson's Thermodynamic Spacetime" (2026). [DOI: 10.5281/zenodo.18664800](https://doi.org/10.5281/zenodo.18664800)
 
-2. **Paper 2:** K. Brodie, "Karlsson's Redshift Periodicity as an Efimov Spectrum" (2026). [DOI: 10.5281/zenodo.18664931](https://doi.org/10.5281/zenodo.18664931)
-
-3. **Paper 4:** K. Brodie, "MOND from Horizon Thermodynamics: Deriving the Radial Acceleration Relation with Zero Free Parameters" (2026). [DOI: 10.5281/zenodo.18677307](https://doi.org/10.5281/zenodo.18677307)
+2. **Paper 4:** K. Brodie, "MOND from Horizon Thermodynamics: Deriving the Radial Acceleration Relation with Zero Free Parameters" (2026). [DOI: 10.5281/zenodo.18677307](https://doi.org/10.5281/zenodo.18677307)
 
 ## License
 
